@@ -28,10 +28,22 @@ height: auto;
 }
 footer{
 margin-top: 1em;
-border-top: 1px solid #000;
+border-top: 1px solid black;
 text-align: center;
 }
 
 p {
 padding: 0;
+}
+nav{
+    background-color: #333;
+    padding: 0px;
+}
+
+main{
+max-width: 20rem;
+}
+
+h1 {
+color: black;
 }
