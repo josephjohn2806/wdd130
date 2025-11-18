@@ -1,6 +1,17 @@
 /* -------------------------
    GLOBAL STYLES
 --------------------------*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+
+
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +42,7 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+nav a ,footer a{
     text-decoration: none;
     color: #003366;
     font-weight: bold;
@@ -40,14 +51,20 @@ nav a {
 /* -------------------------
    HERO SECTION
 --------------------------*/
-.hero {
-    position: relative;
+.hero h1, .hero article {
+    position: absolute;
+    /*example positioning to center text:*/
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+    color:white;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+.hero article img {
+    width: 50%;
+    float: right;
+    margin-left: 15px;
 }
 
 /*overlay box*/
@@ -126,7 +143,7 @@ footer img {
     vertical-align: middle;
 }
 
-footer a {
+.socialmedia a{
     text-decoration: none;
 }
 h2{
@@ -137,6 +154,27 @@ text-align: center;
     margin-top: 40px;
 
 }
+a{
 
+    text-decoration: none;
+}
+a:active,a:visited,a:hover,a:active{
+    text-decoration: none;
+}
+
+:root{
+--primary-color:#007bff;
+--accent-color:#ffc107;
+
+}
+
+body{
+
+    background-color: var(--primary-color);
+}
+
+.button {
+    color: var(--accent-color);
+}
 
 
