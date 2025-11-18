@@ -58,10 +58,11 @@ nav a {
     left:15%;
     transform: translateX(-50%);
     background-color: rgba(0, 0,0,o.6);
-    color: green;
+    color: white;
+    background-color: #123a70;
     font-weight: bold;
     padding: 10%;
-    width: 30%;
+    width: 20%;
     border-radius: 10px;
     text-align: center;
     
