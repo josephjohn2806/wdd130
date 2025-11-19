@@ -1,37 +1,24 @@
-/* ================================
-   CSS VARIABLES
-================================ */
 :root {
     --primary-color: #004e89;
     --accent1-color: #153243;
     --accent2-color: #3c6e71;
     --highlight-color: #ffffff;
-
     --heading-font: "Georgia", serif;
     --body-font: "Arial", sans-serif;
 }
 
-/* ================================
-   BOX MODEL RESET
-================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================================
-   BODY STYLING
-================================ */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #f4f4f4;
 }
 
-/* ================================
-   PAGE WIDTH CONTROL
-================================ */
 header,
 main,
 footer {
@@ -39,18 +26,12 @@ footer {
     margin: 0 auto;
 }
 
-/* ================================
-   HEADING STYLES
-================================ */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* ================================
-   BASIC LAYOUT SPACING
-================================ */
 nav,
 p,
 section,
@@ -59,9 +40,6 @@ article {
     padding: 8px;
 }
 
-/* ================================
-   HEADER NAVIGATION
-================================ */
 header nav a {
     margin-right: 20px;
     text-decoration: none;
@@ -69,28 +47,20 @@ header nav a {
     color: var(--primary-color);
 }
 
-/* ================================
-   SOCIAL MEDIA LINK RESET
-================================ */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* ================================
-   HERO SECTION
-================================ */
 .hero {
     position: relative;
 }
 
-/* Hero image filling the div */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* HERO H1 OVERLAY */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -99,34 +69,34 @@ header nav a {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--highlight-color);
 }
 
-/* HERO ARTICLE OVERLAY */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--highlight-color);
+    opacity: 0.85;
     padding: 16px;
     border-radius: 8px;
+    border: 2px solid var(--accent2-color);
 }
 
-/* ARTICLE IMAGE (unique to hero article) */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 12px;
     border-radius: 6px;
+    border: 2px solid var(--accent2-color);
 }
 
-/* ================================
-   FOOTER STYLING
-================================ */
 footer {
     text-align: center;
     padding: 20px;
+    background-color: var(--accent2-color);
+    color: var(--highlight-color);
 }
 
 footer img {
