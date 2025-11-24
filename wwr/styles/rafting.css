@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    background-color: var(--background-color);
+    background-color: var(--overlay-color);
     color: var(--accent1-color);
 }
 
