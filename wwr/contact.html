@@ -89,49 +89,39 @@
 
 
             <form>
+
                 <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <input type="text" id="fullname" name="fullname">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <p>Choose your purpose:</p>
 
-                <p><strong>Purpose of Message:</strong></p>
-
-                <!-- RADIO 1 -->
-                <label for="purpose-general">
-                    <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
-                    General Inquiry
-                </label><br>
-
-                <!-- RADIO 2 -->
-                <label for="purpose-reservation">
-                    <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
-                    Reservation Question
-                </label><br>
-
-                <!-- RADIO 3 -->
-                <label for="purpose-suggestion">
-                    <input type="radio" id="purpose-suggestion" name="purpose" value="Website Suggestion">
-                    Website Suggestion
+                <label for="option1">
+                    <input type="radio" id="option1" name="purpose" value="general"> General Inquiry
                 </label>
 
-                <label for="message"><br><br>Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <!-- CHECKBOX -->
-                <label for="subscribe" class="checkbox">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
+                <label for="option2">
+                    <input type="radio" id="option2" name="purpose" value="reservation"> Reservation Question
                 </label>
 
-                <button type="submit" class="submit-btn">Send Message</button>
+                <label for="option3">
+                    <input type="radio" id="option3" name="purpose" value="feedback"> Website Feedback
+                </label>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to our newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+
             </form>
-
         </section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>© 2025 🥽 White Water Company 🥽 Joseph John</p>
 
