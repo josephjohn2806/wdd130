@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Company for questions, reservations, or suggestions.">
-    <meta name="author" content="Joseph John">
-    <title>Contact Us | White Water Company</title>
+    <title>Contact Us | White Water Rafting Company</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <img src="images/water-logo.png" alt="Rafting Site Logo" class="logo">
-        <nav>
+    <header class="header">
+        <img src="images/water-logo.png" alt="White Water Rafting Logo" class="logo">
+        <nav class="nav">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -25,111 +22,85 @@
 
     <main>
 
-        <h1>Contact Us</h1>
-
-        <!-- COMPANY INFO SECTION -->
-        <section class="company-info">
-
-            <h2>Our Company Information</h2>
-
-            <div class="info-grid">
-
-                <div class="contact-details">
-                    <p><strong>Address:</strong><br>123 River Street, Arusha, Tanzania</p>
-
-                    <p><strong>Phone:</strong><br>
-                        +255 750 123 456<br>
-                        +255 689 987 654
-                    </p>
-
-                    <p><strong>Email:</strong><br>
-                        info@whitewatercompany.com
-                    </p>
-                </div>
-
-                <!-- GOOGLE MAP -->
-                <div class="map-box">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15952.548791217144!2d36.680555!3d-3.386925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371dfb78435f33%3A0x78a7e76b2c4b32cf!2sArusha!5e0!3m2!1sen!2stz!4v1700000000000"
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-            </div>
+        <!-- COMPANY TITLE -->
+        <section class="company-section">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
         </section>
 
-        <!-- EMPLOYEES SECTION -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
+        <section class="contact-grid">
 
-            <div class="employee-gallery">
-
-                <figure>
-                    <img src="images/founder.jpg" alt="Lead Guide">
-                    <figcaption>John Martin – Lead Guide</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/leadguide.jpg" alt="Safety Officer">
-                    <figcaption>Joseph James – Safety Officer</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/safestspeacialist.jpg" alt="Reservations Manager">
-                    <figcaption>Michael Brown – Reservations Manager</figcaption>
-                </figure>
-
+            <!-- MAP -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.7729531592083!2d-111.63951998507645!3d37.20176167987215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873575e5e8bab3ff%3A0x6f696825b0ef53b3!2sVirgin%20River!5e0!3m2!1sen!2sus!4v1700000000000"
+                    width="100%" height="260" style="border:0;" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
 
-        <!-- CONTACT FORM SECTION -->
-        <section class="contact-form">
+            <!-- FORM -->
+            <form class="contact-form">
 
-            <h2>Send Us a Message</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name">
 
+                <label for="email">Email</label>
+                <input type="email" id="email">
 
-            <form>
+                <p class="label-title">Message Purpose</p>
 
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
+                <label><input type="radio" name="purpose"> General Inquiry</label>
+                <label><input type="radio" name="purpose"> Reservation Question</label>
+                <label><input type="radio" name="purpose"> Website Suggestion</label>
 
-                <p>Choose your purpose:</p>
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
 
-                <label for="option1">
-                    <input type="radio" id="option1" name="purpose" value="general"> General Inquiry
+                <label class="newsletter">
+                    <input type="checkbox"> Please subscribe me to the monthly newsletter
                 </label>
 
-                <label for="option2">
-                    <input type="radio" id="option2" name="purpose" value="reservation"> Reservation Question
-                </label>
-
-                <label for="option3">
-                    <input type="radio" id="option3" name="purpose" value="feedback"> Website Feedback
-                </label>
-
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message"></textarea>
-
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Subscribe to our newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
-
+                <button type="submit">Get in Touch!</button>
             </form>
+        </section>
+
+        <!-- EMPLOYEE PROFILES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-grid">
+
+                <figure>
+                    <img src="images/founder.jpg" alt="Employee Photo" class="employee-img">
+                    <figcaption>Founder</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/leadguide.jpg" alt="Employee Photo" class="employee-img">
+                    <figcaption>Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/safestspeacialist.jpg" alt="Employee Photo" class="employee-img">
+                    <figcaption>Safety Specialist</figcaption>
+                </figure>
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>© 2025 🥽 White Water Company 🥽 Joseph John</p>
+    <footer class="footer">
+        <p>Social Media</p>
 
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook icon"></a>
-            <a href="https://linkedin.com"><img src="images/linkden.jpg" alt="LinkedIn icon"></a>
-            <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram icon"></a>
-        </nav>
+        <div class="footer-icons">
+            <a href="https://facebook.com"><img src="images/facebook.jpg" class="social-icon" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkden.jpg" class="social-icon" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.jpg" class="social-icon" alt="Instagram"></a>
+        </div>
     </footer>
 
 </body>
