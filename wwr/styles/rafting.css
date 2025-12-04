@@ -1,4 +1,4 @@
-
+/*------CSS file for contact.html----*/
 * {
     margin: 0;
     padding: 0;
@@ -200,7 +200,7 @@ figcaption {
 
 
 
-
+/*-------about.html css file----*/
 
 
 
@@ -369,7 +369,7 @@ footer img {
 
 
 
-
+/*------trips.html CSS file ---------*/
 
 
 
@@ -578,3 +578,116 @@ footer .socialmedia img {
         display: inline-block;
     }
 }
+
+
+
+
+
+/* -------- index.html CSS FILE-------*/
+
+
+
+.welcome {
+    max-width: 900px;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    color: #003c70;
+    margin-bottom: 1rem;
+}
+
+
+.highlights {
+    padding: 3rem 5%;
+    background: #ffffff;
+}
+
+.highlights h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003c70;
+    margin-bottom: 2rem;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-card {
+    background: #f8fcff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #e1eef5;
+    box-shadow: 0 10px 25px rgba(0, 50, 90, 0.08);
+    transition: 0.3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 50, 90, 0.15);
+}
+
+.highlight-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+    color: #005c96;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+    color: #405568;
+    font-size: 0.95rem;
+}
+
+
+
+.cta-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #0077b6, #009fe3);
+    color: white;
+    margin-top: 3rem;
+}
+
+.cta-section p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #003049;
+    color: #cfe8ff;
+    margin-top: 3rem;
+}
+
+footer img {
+    width: 35px;
+    margin: 0 0.5rem;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+
+
+
+ 
